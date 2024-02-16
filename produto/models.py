@@ -1,8 +1,8 @@
 from django.db import models
 
 class Produto(models.Model):
-    nome = models.CharField()
-    preco = models.DecimalField()
+    nome = models.CharField(max_length=100)
+    preco = models.DecimalField(decimal_places=2, max_digits=8)
 
     class Meta:
         verbose_name = 'Produto'
