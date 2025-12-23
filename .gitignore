@@ -1,0 +1,59 @@
+# ------------------------------
+# Python / Django
+# ------------------------------
+__pycache__/
+*.py[cod]
+*.so
+*.egg
+*.egg-info/
+dist/
+build/
+*.log
+*.pot
+*.pyc
+*.pyo
+*.pyd
+
+# Django
+*.sqlite3
+media/
+staticfiles/
+local_settings.py
+
+# ------------------------------
+# Environment
+# ------------------------------
+.env
+.env.*      # quaisquer arquivos de ambiente
+venv/
+.venv/
+pip-log.txt
+pip-delete-this-directory.txt
+
+# ------------------------------
+# Docker
+# ------------------------------
+docker-compose.override.yml
+**/Dockerfile.*.swp
+**/Dockerfile.*.bak
+docker-compose.override.yml
+docker-compose.override.*
+docker-volume-*/  # se estiver versionando volumes localmente
+*.log
+
+# ------------------------------
+# Nginx
+# ------------------------------
+nginx/*.conf~  # arquivos temporários
+*.pem          # certificados SSL (Let's Encrypt)
+*.key
+
+# ------------------------------
+# PyCharm
+# ------------------------------
+.idea/
+*.iml
+*.iws
+out/
+.idea_modules/
+.DS_Store
